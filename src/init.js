@@ -24,8 +24,8 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
       Math.random() * 1000
     );
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('mouseover', '.dancer', function() {
+  $('body').on('mouseover', '.dancer', function() {
     $(this).animate({
       width: '100px',
       height: '100px',
